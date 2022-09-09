@@ -243,6 +243,7 @@ if (q.url === "/favicon.ico") {
   r.end();
   console.log("favicon requested");
 }
+bot.launch();
 exports.handler = async (event) => {
   try {
     await bot.handleUpdate(JSON.parse(event.body));
